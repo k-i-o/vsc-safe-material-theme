@@ -4,8 +4,8 @@
       "module": "commonjs",                 
       "moduleResolution": "node",           
       "esModuleInterop": true,              
-      "outDir": "dist",                  
-      "rootDir": ".",                     
+      "outDir": "./dist/scripts",                  
+      "rootDir": "./scripts",                     
       "strict": true,                       
       "skipLibCheck": true,                 
       "forceConsistentCasingInFileNames": true 

@@ -2,7 +2,7 @@
 	"name": "vsc-safe-material-theme",
 	"displayName": "Safe Material Theme",
 	"description": "The most epic theme now for Visual Studio Code BUT SAFE",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "samueleradici",
 	"author": "Samuele Radici (kio)",
 	"icon": "logo.png",
@@ -22,14 +22,15 @@
 		"node": ">=12",
 		"vscode": "^1.51.0"
 	},
-	"scripts": {
-		"build": "run-s cleanup build:ts build:generate-themes",
-		"cleanup": "rimraf build && rimraf dist",
-		"lint": "eslint .",
-		"build:generate-themes": "node dist/scripts/generator/index.js",
-		"move-themes": "ts-node ./scripts/move-themes.ts",
-		"postinstall": "node ./node_modules/vscode/bin/install && tsc -p tsconfig.json && npm run move-themes"
-	},
+    "scripts": {
+        "build": "run-s cleanup build:ts build:generate-themes", 
+        "cleanup": "rimraf build && rimraf dist",
+        "lint": "eslint .",
+        "build:generate-themes": "node dist/scripts/generator/index.js",
+        "build:ts": "tsc -p ./tsconfig.json && ncp material-theme.config.json dist/material-theme.config.js",
+        "obfs": "echo 'Obfuscation skipped.'", 
+        "postinstall": "node ./node_modules/vscode/bin/install && tsc -p tsconfig.json"
+    },  
 	"categories": [
 		"Themes",
 		"Other"
@@ -45,25 +46,13 @@
 		"ui",
 		"workspace"
 	],
-	"main": "./material-theme.config.json",
+	"main": "./dist/material-theme.config",
 	"capabilities": {
 		"untrustedWorkspaces": {
 			"supported": true
 		}
 	},
 	"contributes": {
-		"commands": [
-			{
-				"command": "materialTheme.setAccent",
-				"title": "Set accent color",
-				"category": "Material Theme"
-			},
-			{
-				"command": "materialTheme.showReleaseNotes",
-				"title": "Release Notes",
-				"category": "Material Theme"
-			}
-		],
 		"configuration": {
 			"type": "object",
 			"title": "Material Theme",

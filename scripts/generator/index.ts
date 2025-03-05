@@ -5,11 +5,11 @@ import {generateTheme} from '@moxer/vscode-theme-generator';
 import {ThemeSetting} from './types';
 import {getColorSet} from './color-set';
 
-export const BUILD_FOLDER_PATH = path.join(__dirname, '..', 'dist');
+export const BUILD_FOLDER_PATH = path.join(__dirname, '..', '..');
 export const CONFIG_FILE_NAME = 'material-theme.config.json';
 export const USER_CONFIG_FILE_NAME = 'user.material-theme.config.json';
 export const TS_BUILD_FOLDER_PATH = path.join(__dirname, '..', 'ts-build');
-export const MATERIAL_THEME_EXT_ID = 'equinusocio.vsc-material-theme';
+export const MATERIAL_THEME_EXT_ID = 'samueleradici.vsc-safe-material-theme';
 
 const THEME_BUILD_PATH = path.join(BUILD_FOLDER_PATH, 'themes');
 const themes = ['default', 'darker', 'lighter', 'ocean', 'palenight', 'deepforest'];
