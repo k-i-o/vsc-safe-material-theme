@@ -1,4 +1,4 @@
-# Safe Material Theme [<img src="[https://rawcdn.githack.com/k-i-o/vsc-safe-material-theme/main/logo.png](https://github.com/k-i-o/vsc-safe-material-theme/blob/main/logo.png)" alt="Safe Material Theme" width="90" height="90" align="right">](https://github.com/k-i-o/vsc-safe-material-theme)
+# Safe Material Theme [<img src="https://raw.githubusercontent.com/k-i-o/vsc-safe-material-theme/refs/heads/main/logo.png" alt="Safe Material Theme" width="90" height="90" align="right">](https://github.com/k-i-o/vsc-safe-material-theme)
 > The original Material Theme, now safe and secure. [Check here](https://www.bleepingcomputer.com/news/security/vscode-extensions-with-9-million-installs-pulled-over-security-risks)
 
 ## Table of contents
