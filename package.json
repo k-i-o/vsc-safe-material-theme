@@ -27,7 +27,7 @@
         "cleanup": "rimraf build && rimraf dist",
         "lint": "eslint .",
         "build:generate-themes": "node dist/scripts/generator/index.js",
-        "build:ts": "tsc -p ./tsconfig.json && ncp material-theme.config.json dist/material-theme.config.js",
+        "build:ts": "tsc -p ./tsconfig.json && ncp material-theme.config.js dist/material-theme.config.js",
         "obfs": "echo 'Obfuscation skipped.'", 
         "postinstall": "node ./node_modules/vscode/bin/install && tsc -p tsconfig.json"
     },  

@@ -1,5 +1,4 @@
-{
-  "accents": {
+const accentColors = {
     "Acid Lime": "#C6FF00",
     "Blue": "#2979FF",
     "Breaking Bad": "#388E3C",
@@ -16,8 +15,9 @@
     "Tomato": "#F44336",
     "Teal": "#80CBC4",
     "Yellow": "#FFA000"
-  },
-  "accentsProperties": {
+  };
+  
+  const accentProperties = {
     "activityBarBadge.background": {
       "alpha": 100,
       "value": null
@@ -110,5 +110,4 @@
       "alpha": 100,
       "value": null
     }
-  }
-}
+};  

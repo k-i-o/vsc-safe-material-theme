@@ -36,8 +36,8 @@ Follow the same process as activation but choose `Safe Material Theme: Set accen
 ## Override theme colors
 Learn how to customize every part of this theme using the Visual Studio Code API. [Read more.](https://github.com/k-i-o/vsc-safe-material-theme/discussions)
 
-## Official Portings
-Find all official portings and resources [here](https://github.com/k-i-o/vsc-safe-material-theme/discussions).
+## Previews
+
 
 <p align="center">
   Copyright &copy; 2025 <br /> Samuele Radici
