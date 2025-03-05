@@ -1,0 +1,190 @@
+{
+	"name": "vsc-safe-material-theme",
+	"displayName": "Safe Material Theme",
+	"description": "The most epic theme now for Visual Studio Code BUT SAFE",
+	"version": "0.0.1",
+	"publisher": "samueleradici",
+	"author": "Samuele Radici (kio)",
+	"icon": "logo.png",
+	"galleryBanner": {
+		"color": "#11131C",
+		"theme": "dark"
+	},
+	"homepage": "https://kiocode.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/k-i-o/vsc-safe-material-theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/k-i-o/vsc-safe-material-theme/issues"
+	},
+	"engines": {
+		"node": ">=12",
+		"vscode": "^1.51.0"
+	},
+	"scripts": {
+		"build": "run-s cleanup build:ts build:generate-themes",
+		"cleanup": "rimraf build && rimraf dist",
+		"lint": "eslint .",
+		"build:generate-themes": "node dist/scripts/generator/index.js",
+		"move-themes": "ts-node ./scripts/move-themes.ts",
+		"postinstall": "node ./node_modules/vscode/bin/install && tsc -p tsconfig.json && npm run move-themes"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"main": "./material-theme.config.json",
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "materialTheme.setAccent",
+				"title": "Set accent color",
+				"category": "Material Theme"
+			},
+			{
+				"command": "materialTheme.showReleaseNotes",
+				"title": "Release Notes",
+				"category": "Material Theme"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Material Theme",
+			"properties": {
+				"materialTheme.accent": {
+					"type": "string",
+					"default": "Blue",
+					"enum": [
+						"Acid Lime",
+						"Blue",
+						"Breaking Bad",
+						"Bright Teal",
+						"Cyan",
+						"Graphite",
+						"Indigo",
+						"Lime",
+						"Orange",
+						"Pink",
+						"Purple",
+						"Red",
+						"Sky",
+						"Tomato",
+						"Teal",
+						"Yellow"
+					],
+					"description": "Current accent color selected",
+					"scope": "window"
+				}
+			}
+		},
+		"themes": [
+			{
+				"label": "Material Theme",
+				"path": "./dist/themes/Material-Theme-Default.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme High Contrast",
+				"path": "./dist/themes/Material-Theme-Default-High-Contrast.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Darker",
+				"path": "./dist/themes/Material-Theme-Darker.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Darker High Contrast",
+				"path": "./dist/themes/Material-Theme-Darker-High-Contrast.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Palenight",
+				"path": "./dist/themes/Material-Theme-Palenight.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Palenight High Contrast",
+				"path": "./dist/themes/Material-Theme-Palenight-High-Contrast.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Ocean",
+				"path": "./dist/themes/Material-Theme-Ocean.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Ocean High Contrast",
+				"path": "./dist/themes/Material-Theme-Ocean-High-Contrast.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Deepforest",
+				"path": "./dist/themes/Material-Theme-Deepforest.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme DeepForest High Contrast",
+				"path": "./dist/themes/Material-Theme-Deepforest-High-Contrast.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Material Theme Lighter",
+				"path": "./dist/themes/Material-Theme-Lighter.json",
+				"uiTheme": "vs"
+			},
+			{
+				"label": "Material Theme Lighter High Contrast",
+				"path": "./dist/themes/Material-Theme-Lighter-High-Contrast.json",
+				"uiTheme": "vs"
+			}
+		]
+	},
+	"badges": [
+		{
+			"url": "https://img.shields.io/github/issues/k-i-o/vsc-safe-material-theme",
+			"href": "https://github.com/k-i-o/vsc-safe-material-theme/issues",
+			"description": "Open issues"
+		}
+	],
+	"devDependencies": {
+		"@moxer/vscode-theme-generator": "1.21.0",
+		"@types/browserify": "12.0.36",
+		"@types/fs-extra": "8.1.0",
+		"@types/node": "^22.13.9",
+		"@types/rimraf": "3.0.2",
+		"@typescript-eslint/eslint-plugin": "3.3.0",
+		"@typescript-eslint/parser": "3.3.0",
+		"browserify": "16.5.1",
+		"eslint": "7.2.0",
+		"eslint-config-xo-space": "0.25.0",
+		"eslint-config-xo-typescript": "0.31.0",
+		"fs-extra": "9.0.1",
+		"ncp": "2.0.0",
+		"npm-run-all": "4.1.5",
+		"rimraf": "6.0.1",
+		"standard-version": "9.5.0",
+		"typescript": "^5.8.2",
+		"vscode": "1.1.37"
+	},
+	"dependencies": {
+		"ts-node": "^10.9.2"
+	}
+}
