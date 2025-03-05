@@ -2,7 +2,7 @@
 	"name": "vsc-safe-material-theme",
 	"displayName": "Safe Material Theme",
 	"description": "The most epic theme now for Visual Studio Code BUT SAFE",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "samueleradici",
 	"author": "Samuele Radici (kio)",
 	"icon": "logo.png",
@@ -55,7 +55,7 @@
 	"contributes": {
 		"configuration": {
 			"type": "object",
-			"title": "Material Theme",
+			"title": "Safe Material Theme",
 			"properties": {
 				"materialTheme.accent": {
 					"type": "string",
@@ -85,62 +85,62 @@
 		},
 		"themes": [
 			{
-				"label": "Material Theme",
+				"label": "Safe Material Theme",
 				"path": "./dist/themes/Material-Theme-Default.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme High Contrast",
+				"label": "Safe Material Theme High Contrast",
 				"path": "./dist/themes/Material-Theme-Default-High-Contrast.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Darker",
+				"label": "Safe Material Theme Darker",
 				"path": "./dist/themes/Material-Theme-Darker.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Darker High Contrast",
+				"label": "Safe Material Theme Darker High Contrast",
 				"path": "./dist/themes/Material-Theme-Darker-High-Contrast.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Palenight",
+				"label": "Safe Material Theme Palenight",
 				"path": "./dist/themes/Material-Theme-Palenight.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Palenight High Contrast",
+				"label": "Safe Material Theme Palenight High Contrast",
 				"path": "./dist/themes/Material-Theme-Palenight-High-Contrast.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Ocean",
+				"label": "Safe Material Theme Ocean",
 				"path": "./dist/themes/Material-Theme-Ocean.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Ocean High Contrast",
+				"label": "Safe Material Theme Ocean High Contrast",
 				"path": "./dist/themes/Material-Theme-Ocean-High-Contrast.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Deepforest",
+				"label": "Safe Material Theme Deepforest",
 				"path": "./dist/themes/Material-Theme-Deepforest.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme DeepForest High Contrast",
+				"label": "Safe Material Theme DeepForest High Contrast",
 				"path": "./dist/themes/Material-Theme-Deepforest-High-Contrast.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label": "Material Theme Lighter",
+				"label": "Safe Material Theme Lighter",
 				"path": "./dist/themes/Material-Theme-Lighter.json",
 				"uiTheme": "vs"
 			},
 			{
-				"label": "Material Theme Lighter High Contrast",
+				"label": "Safe Material Theme Lighter High Contrast",
 				"path": "./dist/themes/Material-Theme-Lighter-High-Contrast.json",
 				"uiTheme": "vs"
 			}
