@@ -1,13 +1,9 @@
-# Safe Material Theme [<img src="https://rawcdn.githack.com/k-i-o/vsc-safe-material-theme/main/logo.png" alt="Safe Material Theme" width="90" height="90" align="right">](https://github.com/k-i-o/vsc-safe-material-theme)
+# Safe Material Theme [<img src="https://raw.githubusercontent.com/k-i-o/vsc-safe-material-theme/refs/heads/main/logo.png" alt="Safe Material Theme" width="130" height="130" align="right">](https://github.com/k-i-o/vsc-safe-material-theme)
 > The original Material Theme, now safe and secure. [Check here](https://www.bleepingcomputer.com/news/security/vscode-extensions-with-9-million-installs-pulled-over-security-risks)
-
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmineblocks.com%2F1%2Fwiki%2Fimages%2F5%2F59%2FEmpty.png&f=1&nofb=1&ipt=272d1bf6ef886b68f90fc4b76685cf3d69c29691db2a6136a83a4f99e53db919&ipo=images" height="30">
 
 ## Table of contents
 
 The legendary Material Theme, now cleaned and restored for Visual Studio Code.
-
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmineblocks.com%2F1%2Fwiki%2Fimages%2F5%2F59%2FEmpty.png&f=1&nofb=1&ipt=272d1bf6ef886b68f90fc4b76685cf3d69c29691db2a6136a83a4f99e53db919&ipo=images" height="30">
 
 ## Getting started
 
@@ -55,8 +51,6 @@ Learn how to customize every part of this theme using the Visual Studio Code API
 Find all official portings and resources [here](https://github.com/k-i-o/vsc-safe-material-theme/discussions).
 
 <p align="center">
-  <img src="https://rawcdn.githack.com/k-i-o/vsc-safe-material-theme/main/logo.png" width="32" height="32"/>
-  <br />
   Copyright &copy; 2025 <br /> Samuele Radici
 </p>
 
